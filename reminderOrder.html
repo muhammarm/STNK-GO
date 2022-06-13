@@ -19,19 +19,24 @@
         <div class="text-logo">SIAP ANTAR JEMPUT</div>
         
     </header>
-    <!-- Text diatas button -->
+    <!-- Text diatas kotak data -->
     <div class="text-dearUser">
         Dear, Septio Dwi
     </div>
-    
     <div class="text-topButton">
-        Sistem kami mendeteksi untuk mengubah kata sandi Anda, apakah ini benar-benar Anda? Jika demikian, Silahkan klik Tombol di bawah ini.
+        Sudah waktunya bayar pajak, Silahkan lakukan pembayaran pajak anda di Aplikasi STNKGO dengan mudah !
     </div>
-    <!-- akhir Text diatas button -->   
-    <button class="mid-btn">
-        <div class="text-btn">Click to Reset Password</div>
-    </button>
-    <!-- Text dibawah button -->
+    <!-- akhir Text diatas kotak data -->   
+    <div class="kotak">
+        <div class="text-kotak">
+            Order            : <em>Pajak Tahunan</em><br>
+            Nama            : <em>a.n Septio Dwi</em><br>
+            Tipe               : <em>Mobil</em><br>
+            No Plat          : <em>B 1234 UIX</em><br>
+            Berlaku         : <em>2022 s/d 2023</em><br>
+        </div>
+    </div>
+    <!-- Text dibawah kotak data -->
     <div class="text-bottomButton">
         Terima kasih kepada pengguna yang selalu mendukung aplikasi ini.<br><br>
         Kami Tim <em>STNKGO</em> bersedia melayani Anda dengan baik. Jika ada kesalahan<br> dengan aplikasi ini silahkan <a href="https://www.w3schools.com/html/default.asp">hubungi kami</a>.
@@ -40,7 +45,7 @@
         Terima Kasih,<br>
         <em>STNKGO</em>
     </div>
-    <!-- akhir Text dibawah button -->
+    <!-- akhir Text dibawah kotak data -->
 
     <footer>
         <div class="footer-left">
@@ -100,6 +105,7 @@
         list-style: none;
         text-decoration: none;
     }
+    /* header */
     header{
         position: relative;
         width: 100%;
@@ -137,6 +143,7 @@
 
         color: #000000;
     }
+    /* akhir header */
     .text-dearUser{
         margin-left: auto;
         margin-right: auto;
@@ -172,44 +179,38 @@
         color: #292929;
 
     }
-    .mid-btn {
+    .kotak{
         margin-left: auto;
         margin-right: auto;
-        width: 350px;
-        height: 55px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
+        position: relative;
+        width: 353px;
+        height: 157px;
+        margin-top: 26px;
+
+        background: #F4F4F4;
+        border-radius: 12px;
+        display:flex;
+        justify-content:center;
         align-items: center;
-        margin-top: 46px;
-        background: #106F43;
-
-        /* Primary-1/100% */
-        border-radius: 5px;
     }
-    .text-btn{
-        width: 189px;
-        height: 24px;
-        left: 113px;
-        top: 283px;
-
-        /* Body 1/Bold */
+    .text-kotak{
+        width: 257px;
+        height: 125px;
+        margin: 16px auto;
+        text-align: left;
 
         font-family: 'Open Sans';
         font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;
-        /* identical to box height, or 24px */
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 178%;
+/* or 25px */
 
-        text-align: center;
 
-        color: #FFFFFF;
-        background-color: #106F43;
+        color: #292929;
+
     }
     .text-bottomButton{
-        margin-left: auto;
-        margin-right: auto;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
@@ -251,7 +252,7 @@
 
         color: #292929;
     }
-    .text-thanks em{
+    em{
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
@@ -334,9 +335,15 @@
         justify-content:center;
         align-items: center;
     }
-    
-    
     @media only screen and (max-width: 600px) {
-        
-    } 
+        .footer-left{
+            width: 100%;   
+        }
+        .footer-center{
+            width: 100%;
+        }
+        .footer-right{
+            width: 100%;
+        }
+      }
 </style>
